@@ -4,9 +4,14 @@ import { Footer } from '../components/Footer'
 import Navbar from '../components/Navbar'
 import { Mobile } from '../responsive'
 
-const Container = styled.div``
+const Container = styled.div`
+width: 100vw;
+overflow: hidden;
+`
+
 const Wrapper = styled.div`
 padding: 20px;
+width: 95%;
 `
 const Title = styled.h1`
 font-weight: 300;
@@ -126,7 +131,7 @@ font-weight: 600;
 
 export const Cart = () => {
   return (
-    <>
+    <div style={{overflow: "hidden"}}>
   <Navbar/>
     <Container>
         <Wrapper>
@@ -203,6 +208,6 @@ export const Cart = () => {
         </Wrapper>
         <Footer/>
     </Container>
-    </>
+    </div>
   )
 }

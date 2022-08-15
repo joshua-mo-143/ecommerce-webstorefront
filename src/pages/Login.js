@@ -51,7 +51,7 @@ cursor: pointer;
 
 const Login = () => {
   return (
-    <>
+    <div style={{overflow: "hidden"}}>
     <Navbar/>
     <Container>
         <Wrapper>
@@ -65,7 +65,7 @@ const Login = () => {
             </Form>
         </Wrapper>
     </Container>
-    </>
+    </div>
   )
 }
 

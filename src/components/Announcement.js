@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { Mobile } from '../responsive'
 
 const Container = styled.div`
+overflow: hidden;
 height: 30px;
 background-color: teal;
 color: white;

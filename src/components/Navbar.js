@@ -10,7 +10,7 @@ const Container = styled.div`
 height: 90px;
 width: 100vw;
 ${Mobile({width: "100vw"})};
-overflow: hidden;
+overflow-x: hidden;
 `
 
 const Wrapper = styled.div`
@@ -19,6 +19,7 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 ${Mobile({padding: "10px 0px"})};
+overflow-x: hidden;
 `
 
 const Left = styled.div`
@@ -61,6 +62,7 @@ flex: 1;
 display: flex;
 align-items: center;
 justify-content: flex-end;
+margin-right: 25px;
 ${Mobile({flex: "2", justifyContent: "center", padding: "0px 10px"})};
 `;
 

@@ -44,7 +44,7 @@ padding: 15px 20px;`
 
 const Register = () => {
   return (
-    <>
+    <div style={{overflow: "hidden"}}>
     <Navbar/>
     <Container>
         <Wrapper>
@@ -63,7 +63,7 @@ const Register = () => {
             </Form>
         </Wrapper>
     </Container>
-    </>
+    </div>
   )
 }
 
