@@ -7,9 +7,10 @@ import { Mobile } from '../responsive'
 
 const Container = styled.div`
     display: flex;
+    flex-direction: row;
     padding: 20px;
     justify-content: space-between;
-    ${Mobile({padding: "0px", flexDirection: "column"})};
+    ${Mobile({padding: "0px", flexDirection: "column", alignItems: "center"})};
 `
 
 export const Categories = () => {

@@ -5,6 +5,7 @@ import { Mobile } from '../responsive'
 
 const Container = styled.div`
 height: 60vh;
+width: 100vw;
 background-color: #fcf5f5;
 display: flex;
 align-items: center;
@@ -15,12 +16,14 @@ flex-direction: column;
 const Title = styled.h1`
 font-size: 70px;
 margin-bottom: 25px;
+${Mobile({fontSize: "35px"})};
 `
 const Description = styled.div`
+max-width: 100%;
 font-size: 24px;
 font-weight: 300;
 margin-bottom: 25px;
-${Mobile({textAlign: "center"})};
+${Mobile({textAlign: "center", fontSize: "20px"})};
 `
 
 const InputContainer = styled.div`
@@ -30,6 +33,7 @@ background: white;
 display: flex;
 justify-content: space-between;
 border: 1px solid lightgray;
+${Mobile({width: "90%"})};
 
 `
 
@@ -37,7 +41,7 @@ const Input = styled.input`
 border: none;
 flex: 8;
 padding-left: 25px;
-${Mobile({width: "80%"})};
+${Mobile({width: "100%"})};
 `
 
 const Button = styled.button`

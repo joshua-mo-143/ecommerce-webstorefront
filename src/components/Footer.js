@@ -3,7 +3,9 @@ import styled from 'styled-components'
 import { Mobile } from '../responsive'
 
 const Container = styled.div`
+width: 100vw;
 display: flex;
+flex-direction: row;
 ${Mobile({flexDirection: "column"})}
 `
 const Left = styled.div`
@@ -34,6 +36,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 margin-right: 50px;
+${Mobile({width: "100px"})};
 `
 
 const Center = styled.div`
@@ -69,6 +72,7 @@ const ContactItem = styled.div`
 margin-bottom: 20px;
 display: flex;
 align-items: center;
+${Mobile({width: "100%"})};
 `
 
 const Payment = styled.img`

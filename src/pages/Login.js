@@ -1,6 +1,4 @@
-import { Announcement } from '@material-ui/icons'
 import styled from 'styled-components'
-import { Footer } from '../components/Footer'
 import Navbar from '../components/Navbar'
 import { Mobile } from '../responsive'
 
@@ -13,14 +11,12 @@ align-items: center;
 justify-content: center;
 `
 
-const PageContainer = styled.div`
-width: 100vw;
-`
 const Wrapper = styled.div`
 width: 40%;
+${Mobile({width: "85%"})};
 padding: 20px;
 background-color: teal;
-${Mobile({width: "75%"})};
+
 `
 
 const Title = styled.h1`
@@ -36,6 +32,7 @@ flex: 1;
 min-width: 40%;
 margin: 20px 10px 0px 0px;
 padding: 20px;
+${Mobile({padding: "10px"})};
 
 `
 const Button = styled.button`

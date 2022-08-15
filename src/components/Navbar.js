@@ -8,7 +8,8 @@ import { Link } from 'react-router-dom';
 
 const Container = styled.div`
 height: 90px;
-width: 99vw;
+width: 100vw;
+${Mobile({width: "100vw"})};
 overflow: hidden;
 `
 
@@ -24,6 +25,7 @@ const Left = styled.div`
 flex: 1;
 display: flex;
 align-items: center;
+${Mobile({flex: "0"})};
 `;
 
 const Language = styled.span`
@@ -35,14 +37,15 @@ ${Mobile({display: "none"})};
 const SearchContainer = styled.div`
 border: 1px solid lightgray;
 display: flex;
+${Mobile({display: "none"})};
 align-items: center;
 margin-left: 25px;
 padding: 5px;
-${Mobile({width: "50px"})};
 `
 
 const Input = styled.input`
     border: none;
+    ${Mobile({width: "50px", marginLeft: "0px"})};
 `
 const Center = styled.div`
 flex: 1;
@@ -58,7 +61,7 @@ flex: 1;
 display: flex;
 align-items: center;
 justify-content: flex-end;
-${Mobile({flex: "2", justifyContent: "center"})};
+${Mobile({flex: "2", justifyContent: "center", padding: "0px 10px"})};
 `;
 
 const MenuItem = styled.div`

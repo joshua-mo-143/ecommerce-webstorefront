@@ -1,8 +1,6 @@
 import { Cart } from "./Cart";
 import Home from "./Home";
 import Login from "./Login";
-import { Product } from "./Product";
-import { ProductList } from "./ProductList";
 import Register from "./Register";
 import { Route, Routes, Navigate, useLocation} from 'react-router-dom';
 

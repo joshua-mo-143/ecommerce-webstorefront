@@ -1,7 +1,5 @@
-import { Button } from '@material-ui/core'
 import { Add, Remove } from '@material-ui/icons'
 import styled from 'styled-components'
-import { Announcement } from '../components/Announcement'
 import { Footer } from '../components/Footer'
 import Navbar from '../components/Navbar'
 import { Mobile } from '../responsive'
@@ -32,11 +30,6 @@ color: ${(props)=>props.type === "filled" && "white"};
 
 const TopTexts = styled.div`
 ${Mobile({display: "none"})}
-`
-const TopText = styled.span`
-text-decoration: underline;
-cursor: pointer:
-margin: 0px 10px;
 `
 
 const Bottom = styled.div`

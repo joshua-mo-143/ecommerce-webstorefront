@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Mobile } from '../responsive'
 
 const Container = styled.div`
 height: 30px;
@@ -10,6 +11,7 @@ justify-content: center;
 font-size: 14px;
 font-weight: 500;
 width: 100vw;
+${Mobile({width: "100vw"})};
 `
 
 export const Announcement = () => {

@@ -8,9 +8,10 @@ const Container = styled.div`
 width: 100%;
 height: 80vh;
 display: flex;
+${Mobile({display: "none"})};
 position: relative;
 overflow: hidden;
-${Mobile({display: "none"})};
+
 `
 
 const Arrow = styled.div`
@@ -31,8 +32,8 @@ const Arrow = styled.div`
  opacity: 0.5;
  z-index: 2;
   `
-{/* Left property: If the arrow has a prop direction of "left", use "left: 10px" */}
-{/* Right property: If the arrow has a prop direction of "right", use "right: 10px" */}
+/* Left property: If the arrow has a prop direction of "left", use "left: 10px" */
+/* Right property: If the arrow has a prop direction of "right", use "right: 10px" */
 
 const Wrapper = styled.div`
     height: 100%;
@@ -82,7 +83,7 @@ export const Slider = () => {
 
     const handleClick = (direction) => {
         
-        if (direction == "left") {
+        if (direction === "left") {
             setSlideIndex(slideIndex > 0 ? slideIndex-1 : 2)
         } else {
             setSlideIndex(slideIndex < 2 ? slideIndex+1 : 0)
